@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from '../Assets/logo1.png'
 import cart_icon from "../Assets/cart_icon.png"
 
+
 const Navbar = () => {
 
   const [menu,setMenu] = useState("shop");
