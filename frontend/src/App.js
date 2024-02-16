@@ -1,7 +1,11 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import {BrowserRouter,Routes,Router} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import ShopCategory from './Pages/ShopCategory';
+import Shop from './Pages/Shop'; 
+import Product from './Pages/Product'; 
+import Cart from './Pages/Cart'; 
+import LoginSignup from './Pages/LoginSignup';
 
 
 function App() {
@@ -17,7 +21,8 @@ function App() {
         <Route path="/product" element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>
-        <Route path='/' element={<Shop/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
       </BrowserRouter>
     </div>
